@@ -30,8 +30,9 @@ public class App
         driver.get("https://www.google.com/");
         TakesScreenshot shot = (TakesScreenshot)driver;
         File srcFile = shot.getScreenshotAs(OutputType.FILE);
-        File destFile = new File("ganesh.jpg");
+        File destFile = new File("screenshot/ganesh.jpg");
         FileUtils.copyFile(srcFile, destFile);
+        System.out.println("Screenshot is taken successfully");
         
     }
 }
