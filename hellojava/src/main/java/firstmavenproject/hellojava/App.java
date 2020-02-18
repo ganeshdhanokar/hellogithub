@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -35,6 +35,6 @@ public class App
         File destFile = new File("screenshot/ganesh.jpg");
         FileUtils.copyFile(srcFile, destFile);
         System.out.println("Screenshot is taken successfully");
-        
+        Assert.assertTrue(false);
     }
 }
